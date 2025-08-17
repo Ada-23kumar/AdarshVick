@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholder Image Generator</title>
+    <link rel="stylesheet" href="assets/css/placeholder-generator.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Portfolio Placeholder Image Generator</h1>
+        <p>This tool generates placeholder images for your portfolio projects. Click the buttons below to create and download images.</p>
+        
+        <div class="download-section">
+            <h3>Profile Image</h3>
+            <canvas id="profileCanvas" width="400" height="400"></canvas>
+            <br>
+            <button onclick="generateProfileImage()">Generate Profile Image</button>
+            <button onclick="downloadImage('profileCanvas', 'profile.jpg')">Download Profile Image</button>
+        </div>
+
+        <div class="download-section">
+            <h3>AI Tracker Project</h3>
+            <canvas id="aiTrackerCanvas" width="400" height="250"></canvas>
+            <br>
+            <button onclick="generateAITrackerImage()">Generate AI Tracker Image</button>
+            <button onclick="downloadImage('aiTrackerCanvas', 'ai-tracker.jpg')">Download AI Tracker Image</button>
+        </div>
+
+        <div class="download-section">
+            <h3>Robotic Arm Project</h3>
+            <canvas id="roboticArmCanvas" width="400" height="250"></canvas>
+            <br>
+            <button onclick="generateRoboticArmImage()">Generate Robotic Arm Image</button>
+            <button onclick="downloadImage('roboticArmCanvas', 'robotic-arm.jpg')">Download Robotic Arm Image</button>
+        </div>
+
+        <div class="download-section">
+            <h3>Waste Management Project</h3>
+            <canvas id="wasteManagementCanvas" width="400" height="250"></canvas>
+            <br>
+            <button onclick="generateWasteManagementImage()">Generate Waste Management Image</button>
+            <button onclick="downloadImage('wasteManagementCanvas', 'waste-management.jpg')">Download Waste Management Image</button>
+        </div>
+    </div>
+
+    <script src="assets/js/placeholder-generator.js"></script>
+</body>
+</html>
